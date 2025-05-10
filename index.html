@@ -29,6 +29,11 @@
     footer { background-color: #212529; color: white; text-align: center; padding: 20px 0; }
     footer a { color: #ff6600; text-decoration: none; margin: 0 10px; cursor: pointer; }
     .hidden { display: none; }
+    .dialog-box { background: #fff; border: 2px solid #333; padding: 20px; max-width: 400px; margin: 20px auto; border-radius: 8px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+    .dialog-box button { margin: 10px; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+    .dialog-box .accept { background-color: #28a745; color: white; }
+    .dialog-box .cancel { background-color: #dc3545; color: white; }
+    .dialog-result { text-align: center; margin-top: 15px; font-weight: bold; }
   </style>
 </head>
 <body>
@@ -53,36 +58,61 @@
 
 <div class="container">
   <div id="main">
-    <!-- Home content -->
     <section class="section content-block">
       <h2>Welcome to Autocoreparts</h2>
-      <p>Discover a wide selection of top-quality auto parts for all vehicles. Whether you're a DIYer or a pro mechanic, we have what you need.</p>
+      <p>Discover a wide selection of top-quality auto parts for all vehicles. Whether you're a DIYer or a pro mechanic, we have what you need. We carry everything from OEM replacements to high-performance upgrades, all at competitive prices.</p>
+      <p>Our mission is to keep your car running smoothly, safely, and in style. With thousands of satisfied customers and decades of experience, we are your trusted source for all things automotive.</p>
     </section>
     <section class="section">
       <h2>Featured Products</h2>
       <div class="image-gallery">
         <img src="wheel.png" alt="Car Wheel">
-        <img src="auto1.png" alt="Car Engine">
+        <img src="auto.png" alt="Car Engine">
         <img src="brake1.png" alt="Brake System">
         <img src="batt.png" alt="Car Battery">
-        <img src="auto2.png" alt="Car Exhaust">
+        <img src="auto1.png" alt="Car Exhaust">
         <img src="shock.png" alt="Shock Absorber">
       </div>
     </section>
+    <section class="section content-block">
+      <h2>Why Choose Us?</h2>
+      <p>✔ Wide selection of top brands and OEM parts<br>
+      ✔ Fast and reliable shipping across the country<br>
+      ✔ Friendly, knowledgeable customer service<br>
+      ✔ Secure checkout and hassle-free returns<br>
+      ✔ Competitive pricing and regular discounts</p>
+      <p>We are committed to helping you keep your vehicle at peak performance, whether it’s a weekend project or a major repair. Shop with confidence knowing you’re getting the best parts and the best support.</p>
+    </section>
+    <section class="section">
+      <h2>Our Top Categories</h2>
+      <div class="image-gallery">
+        <img src="auto3.png" alt="Tires">
+        <img src="head1.png" alt="Suspension">
+        <img src="auto1.png" alt="Car Lights">
+        <img src="wheel.png" alt="Radiator">
+        <img src="batt.png" alt="Spark Plug">
+        <img src="air1.png" alt="Air Filter">
+      </div>
+    </section>
     <section class="section reviews">
-      <h2>Customer Reviews</h2>
+      <h2>What Our Customers Say</h2>
       <div class="review"><strong>John D.:</strong> "Fantastic service and top-notch parts! My car runs like new again."</div>
       <div class="review"><strong>Sarah K.:</strong> "Everything I needed, fast delivery. Highly recommended!"</div>
       <div class="review"><strong>Mike P.:</strong> "Great prices and a huge selection. My go-to shop!"</div>
+      <div class="review"><strong>Emily W.:</strong> "Customer service went above and beyond. I’ll be a repeat customer for sure."</div>
+      <div class="review"><strong>James L.:</strong> "The performance upgrades I bought here completely transformed my car. Love it!"</div>
+    </section>
+    <section class="section content-block">
+      <h2>Expert Advice & Resources</h2>
+      <p>Visit our blog and resource center to get expert tips, how-to guides, and maintenance advice. From diagnosing engine problems to choosing the best aftermarket parts, we’re here to help every step of the way. Subscribe to our newsletter for exclusive offers, new product updates, and expert insights.</p>
     </section>
     <section class="section cta">
       <h2>Ready to Upgrade?</h2>
-      <p>Shop now and enjoy exclusive deals on premium parts!</p>
+      <p>Shop now and enjoy exclusive deals on premium parts! Get free shipping on orders over $100 and a 30-day money-back guarantee.</p>
       <button onclick="showSection('shop')">Start Shopping</button>
     </section>
   </div>
 
-  <!-- Shop page -->
   <section id="shop" class="section content-block hidden">
     <h2>Shop Our Products</h2>
     <p>Explore categories like brakes, engines, exhausts, and more. Our best sellers include high-performance brake kits, long-lasting batteries, and premium oil filters. Don’t miss our seasonal deals!</p>
@@ -93,13 +123,11 @@
     </div>
   </section>
 
-  <!-- About page -->
   <section id="about" class="section content-block hidden">
     <h2>About Autocoreparts</h2>
     <p>Founded in 2000, Autocoreparts has grown from a local shop to a nationwide supplier. Our mission is to provide reliable, affordable parts that drivers and mechanics can trust. With decades of industry experience, our team is passionate about helping you get the most out of your vehicle.</p>
   </section>
 
-  <!-- Blog page -->
   <section id="blog" class="section content-block hidden">
     <h2>Latest Blog Posts</h2>
     <p><strong>How to Extend the Life of Your Car Battery</strong><br>Learn simple maintenance tips that can save you money and prevent breakdowns.</p>
@@ -107,7 +135,6 @@
     <p><strong>Choosing the Right Oil Filter</strong><br>We break down what you need to know to pick the best filter for your car.</p>
   </section>
 
-  <!-- Privacy, Terms, Cookies sections -->
  <section id="privacy" class="section privacy hidden">
         <h2>Privacy Policy</h2>
         <p>At Autocoreparts, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information.</p>
@@ -146,9 +173,9 @@
         <p>If you have questions, please contact us at support@Autocoreparts.com.</p>
     </section>
 
-    <section id="cookies" class="section cookies hidden">
-        <h2>Cookies Policy</h2>
-        <p>We use cookies to improve your experience on our website, personalize content, and analyze traffic.</p>
+  <section id="cookies" class="section content-block hidden">
+    <h2>Cookies Policy</h2>
+   <p>We use cookies to improve your experience on our website, personalize content, and analyze traffic.</p>
         <h3>1. What Are Cookies?</h3>
         <p>Cookies are small text files stored on your device that help us understand your preferences and improve site performance.</p>
         <h3>2. How We Use Cookies</h3>
@@ -162,8 +189,14 @@
         <h3>6. Contact Us</h3>
         <p>If you have any questions, please contact us at cookies@Autocoreparts.com.</p>
     </section>
+    <div class="dialog-box" id="cookieDialog">
+      <p>Do you accept cookies?</p>
+      <button class="accept" onclick="acceptCookies()">Accept</button>
+      <button class="cancel" onclick="cancelCookies()">Cancel</button>
+    </div>
+    <div class="dialog-result" id="cookieResult"></div>
+  </section>
 </div>
-
 
 <footer>
   &copy; 2025 Autocoreparts |
@@ -178,6 +211,18 @@
     sections.forEach(id => document.getElementById(id)?.classList.add('hidden'));
     document.getElementById(sectionId)?.classList.remove('hidden');
     window.scrollTo(0, 0);
+    if (sectionId === 'cookies') {
+      document.getElementById('cookieDialog').style.display = 'block';
+      document.getElementById('cookieResult').textContent = '';
+    }
+  }
+  function acceptCookies() {
+    document.getElementById('cookieDialog').style.display = 'none';
+    document.getElementById('cookieResult').textContent = '✅ You accepted cookies.';
+  }
+  function cancelCookies() {
+    document.getElementById('cookieDialog').style.display = 'none';
+    document.getElementById('cookieResult').textContent = '❌ You declined cookies.';
   }
 </script>
 </body>
