@@ -191,6 +191,67 @@
     <h3>4. Third-Party Cookies</h3>
     <p>We may allow third-party cookies for analytics and advertising purposes.</p>
 </section>
+ <section>
+<div class="dialog-box" id="cookieDialog">
+      <p>Do you accept cookies?</p>
+      <button class="accept" onclick="acceptCookies()">Accept</button>
+      <button class="cancel" onclick="cancelCookies()">Cancel</button>
+    </div>
+    <div class="dialog-result" id="cookieResult"></div>
+  </section>
+  <section id="contact" class="section content-block hidden">
+  <h2>Contact Us</h2>
+  <p>Interested in our products or need assistance? Fill out the form below and our team will get back to you as soon as possible.</p>
+  <form id="contactForm">
+    <div style="margin-bottom: 15px;">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+    </div>
+    <div style="margin-bottom: 15px;">
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+    </div>
+    <div style="margin-bottom: 15px;">
+      <label for="product">Product or Category of Interest:</label><br>
+      <input type="text" id="product" name="product" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+    </div>
+    <div style="margin-bottom: 15px;">
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+    </div>
+    <button type="submit" style="padding: 12px 25px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
+    <div id="formResponse" style="margin-top: 10px; font-weight: bold;"></div>
+  </form>
+</section>
+
+
+<footer>
+  &copy; 2025 Autocoreparts |
+  <a onclick="showSection('privacy')">Privacy Policy</a> |
+  <a onclick="showSection('terms')">Terms</a> |
+  <a onclick="showSection('cookies')">Cookies</a>
+</footer>
+
+<script>
+  function showSection(sectionId) {
+    const sections = ['main', 'shop', 'about', 'blog', 'privacy', 'terms', 'cookies'];
+    sections.forEach(id => document.getElementById(id)?.classList.add('hidden'));
+    document.getElementById(sectionId)?.classList.remove('hidden');
+    window.scrollTo(0, 0);
+  }
+
+  function acceptCookies() {
+    document.getElementById('cookieDialog').style.display = 'none';
+    document.getElementById('cookieResult').textContent = '✅ You accepted cookies.';
+  }
+
+  function cancelCookies() {
+    document.getElementById('cookieDialog').style.display = 'none';
+    document.getElementById('cookieResult').textContent = '❌ You declined cookies.';
+  }
+</script>
+</body>
+</html>
 
 <section id="contact" class="section content-block hidden">
   <h2>Contact Us</h2>
