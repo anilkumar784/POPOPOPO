@@ -1,112 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoParts Hub</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
-        body { background-color: #f8f9fa; line-height: 1.6; }
-        header { background-color: #212529; color: #fff; padding: 20px 0; text-align: center; }
-        header h1 { font-size: 2.5em; }
-        nav { background-color: #343a40; text-align: center; }
-        nav a { color: white; padding: 14px 20px; display: inline-block; text-decoration: none; transition: background 0.3s; }
-        nav a:hover { background-color: #495057; }
-        .hero { background-image: url('https://images.unsplash.com/photo-1603398938378-02b5d6a79e0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 20px; }
-        .hero h2 { font-size: 3em; margin-bottom: 20px; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); }
-        .hero p { font-size: 1.2em; margin-bottom: 30px; }
-        .hero button { padding: 12px 30px; font-size: 1em; background-color: #ff6600; color: white; border: none; border-radius: 5px; cursor: pointer; }
-        .hero button:hover { background-color: #e65c00; }
-        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
-        .section { margin-bottom: 60px; }
-        .section h2 { text-align: center; margin-bottom: 30px; font-size: 2em; color: #333; }
-        .about, .privacy, .terms, .cookies { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        .image-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 30px; }
-        .image-gallery img { width: 100%; height: auto; border-radius: 8px; }
-        .content-block { margin-bottom: 20px; }
-        .reviews { background-color: #fff3cd; padding: 20px; border-radius: 8px; }
-        .review { margin-bottom: 15px; }
-        .cta { background-color: #ff6600; color: white; text-align: center; padding: 40px 20px; border-radius: 8px; }
-        footer { background-color: #212529; color: white; text-align: center; padding: 20px 0; }
-        footer a { color: #ff6600; text-decoration: none; margin: 0 10px; cursor: pointer; }
-        .hidden { display: none; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoParts Hub</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background-color: #f8f9fa; line-height: 1.6; }
+    header { background-color: #212529; color: #fff; padding: 20px 0; text-align: center; }
+    header h1 { font-size: 2.5em; }
+    nav { background-color: #343a40; text-align: center; }
+    nav a { color: white; padding: 14px 20px; display: inline-block; text-decoration: none; transition: background 0.3s; }
+    nav a:hover { background-color: #495057; }
+    .hero { background-image: url('https://images.unsplash.com/photo-1603398938378-02b5d6a79e0c'); background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 20px; }
+    .hero h2 { font-size: 3em; margin-bottom: 20px; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); }
+    .hero p { font-size: 1.2em; margin-bottom: 30px; }
+    .hero button { padding: 12px 30px; font-size: 1em; background-color: #ff6600; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    .hero button:hover { background-color: #e65c00; }
+    .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+    .section { margin-bottom: 60px; }
+    .section h2 { text-align: center; margin-bottom: 30px; font-size: 2em; color: #333; }
+    .content-block, .privacy, .terms, .cookies { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .image-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 30px; }
+    .image-gallery img { width: 100%; height: auto; border-radius: 8px; }
+    .reviews { background-color: #fff3cd; padding: 20px; border-radius: 8px; }
+    .review { margin-bottom: 15px; }
+    .cta { background-color: #ff6600; color: white; text-align: center; padding: 40px 20px; border-radius: 8px; }
+    footer { background-color: #212529; color: white; text-align: center; padding: 20px 0; }
+    footer a { color: #ff6600; text-decoration: none; margin: 0 10px; cursor: pointer; }
+    .hidden { display: none; }
+  </style>
 </head>
 <body>
 <header>
-    <h1>AutoParts Hub</h1>
+  <h1>AutoParts Hub</h1>
 </header>
 <nav>
-    <a href="#" onclick="showSection('main')">Home</a>
-    <a href="#" onclick="showSection('main')">Shop</a>
-    <a href="#" onclick="showSection('main')">About</a>
-    <a href="#" onclick="showSection('main')">Blog</a>
-    <a href="#" onclick="showSection('main')">Contact</a>
+  <a href="#" onclick="showSection('main')">Home</a>
+  <a href="#" onclick="showSection('shop')">Shop</a>
+  <a href="#" onclick="showSection('about')">About</a>
+  <a href="#" onclick="showSection('blog')">Blog</a>
+  <a href="#" onclick="showSection('privacy')">Privacy Policy</a>
+  <a href="#" onclick="showSection('terms')">Terms</a>
+  <a href="#" onclick="showSection('cookies')">Cookies</a>
 </nav>
 
 <section class="hero">
-    <h2>Drive with Confidence</h2>
-    <p>Premium auto parts for performance, safety, and style — all in one place.</p>
-    <button onclick="showSection('main')">Shop Now</button>
+  <h2>Drive with Confidence</h2>
+  <p>Premium auto parts for performance, safety, and style — all in one place.</p>
+  <button onclick="showSection('shop')">Shop Now</button>
 </section>
 
 <div class="container">
-    <div id="main">
-        <section class="section about">
-            <h2>Welcome to AutoParts Hub</h2>
-            <p>Discover a wide selection of top-quality auto parts for all vehicle makes and models. Whether you're a DIY enthusiast or a professional mechanic, we have what you need to keep your vehicle running smoothly.</p>
-        </section>
+  <div id="main">
+    <!-- Home content -->
+    <section class="section content-block">
+      <h2>Welcome to AutoParts Hub</h2>
+      <p>Discover a wide selection of top-quality auto parts for all vehicles. Whether you're a DIYer or a pro mechanic, we have what you need.</p>
+    </section>
+    <section class="section">
+      <h2>Featured Products</h2>
+      <div class="image-gallery">
+        <img src="https://source.unsplash.com/featured/?car-wheel" alt="Car Wheel">
+        <img src="https://source.unsplash.com/featured/?car-engine" alt="Car Engine">
+        <img src="https://source.unsplash.com/featured/?brake-system" alt="Brake System">
+        <img src="https://source.unsplash.com/featured/?car-battery" alt="Car Battery">
+        <img src="https://source.unsplash.com/featured/?car-exhaust" alt="Car Exhaust">
+        <img src="https://source.unsplash.com/featured/?shock-absorber" alt="Shock Absorber">
+      </div>
+    </section>
+    <section class="section reviews">
+      <h2>Customer Reviews</h2>
+      <div class="review"><strong>John D.:</strong> "Fantastic service and top-notch parts! My car runs like new again."</div>
+      <div class="review"><strong>Sarah K.:</strong> "Everything I needed, fast delivery. Highly recommended!"</div>
+      <div class="review"><strong>Mike P.:</strong> "Great prices and a huge selection. My go-to shop!"</div>
+    </section>
+    <section class="section cta">
+      <h2>Ready to Upgrade?</h2>
+      <p>Shop now and enjoy exclusive deals on premium parts!</p>
+      <button onclick="showSection('shop')">Start Shopping</button>
+    </section>
+  </div>
 
-        <section class="section">
-            <h2>Our Top Products</h2>
-            <div class="image-gallery">
-                <img src="https://source.unsplash.com/featured/?car-wheel" alt="Car Wheel">
-                <img src="https://source.unsplash.com/featured/?car-engine" alt="Car Engine">
-                <img src="https://source.unsplash.com/featured/?brake-system" alt="Brake System">
-                <img src="https://source.unsplash.com/featured/?car-battery" alt="Car Battery">
-                <img src="https://source.unsplash.com/featured/?car-exhaust" alt="Car Exhaust">
-                <img src="https://source.unsplash.com/featured/?shock-absorber" alt="Shock Absorber">
-                <img src="https://source.unsplash.com/featured/?auto-parts" alt="Auto Parts">
-            </div>
-            <div class="content-block">
-                <h2>Why Choose Us?</h2>
-                <p>At AutoParts Hub, we combine exceptional quality with affordable prices. Our inventory includes trusted brands and OEM-certified parts to meet every repair or upgrade need. Plus, we offer fast shipping and outstanding customer support to make your experience seamless.</p>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Explore More Products</h2>
-            <div class="image-gallery">
-                <img src="https://source.unsplash.com/featured/?spark-plug" alt="Spark Plug">
-                <img src="https://source.unsplash.com/featured/?oil-filter" alt="Oil Filter">
-                <img src="https://source.unsplash.com/featured/?air-filter" alt="Air Filter">
-                <img src="https://source.unsplash.com/featured/?car-radiator" alt="Radiator">
-                <img src="https://source.unsplash.com/featured/?fuel-pump" alt="Fuel Pump">
-                <img src="https://source.unsplash.com/featured/?headlights" alt="Headlights">
-            </div>
-        </section>
-
-        <section class="section reviews">
-            <h2>What Our Customers Say</h2>
-            <div class="review">
-                <strong>John D.</strong>: "Fantastic service and top-notch parts! My car runs like new again."
-            </div>
-            <div class="review">
-                <strong>Sarah K.</strong>: "I found everything I needed, and the delivery was super fast. Highly recommended!"
-            </div>
-            <div class="review">
-                <strong>Mike P.</strong>: "Great prices and a massive selection. This is my go-to shop for car parts."
-            </div>
-        </section>
-
-        <section class="section cta">
-            <h2>Ready to Upgrade Your Ride?</h2>
-            <p>Shop now and enjoy exclusive deals on premium auto parts!</p>
-            <button onclick="showSection('main')">Start Shopping</button>
-        </section>
+  <!-- Shop page -->
+  <section id="shop" class="section content-block hidden">
+    <h2>Shop Our Products</h2>
+    <p>Explore categories like brakes, engines, exhausts, and more. Our best sellers include high-performance brake kits, long-lasting batteries, and premium oil filters. Don’t miss our seasonal deals!</p>
+    <div class="image-gallery">
+      <img src="https://source.unsplash.com/featured/?auto-brakes" alt="Brakes">
+      <img src="https://source.unsplash.com/featured/?auto-oilfilter" alt="Oil Filter">
+      <img src="https://source.unsplash.com/featured/?auto-battery" alt="Battery">
     </div>
+  </section>
 
-   <section id="privacy" class="section privacy hidden">
+  <!-- About page -->
+  <section id="about" class="section content-block hidden">
+    <h2>About AutoParts Hub</h2>
+    <p>Founded in 2000, AutoParts Hub has grown from a local shop to a nationwide supplier. Our mission is to provide reliable, affordable parts that drivers and mechanics can trust. With decades of industry experience, our team is passionate about helping you get the most out of your vehicle.</p>
+  </section>
+
+  <!-- Blog page -->
+  <section id="blog" class="section content-block hidden">
+    <h2>Latest Blog Posts</h2>
+    <p><strong>How to Extend the Life of Your Car Battery</strong><br>Learn simple maintenance tips that can save you money and prevent breakdowns.</p>
+    <p><strong>Top 5 Signs You Need New Brakes</strong><br>Don’t wait until it’s too late — check these signs and keep your brakes in top shape.</p>
+    <p><strong>Choosing the Right Oil Filter</strong><br>We break down what you need to know to pick the best filter for your car.</p>
+  </section>
+
+  <!-- Privacy, Terms, Cookies sections -->
+ <section id="privacy" class="section privacy hidden">
         <h2>Privacy Policy</h2>
         <p>At AutoParts Hub, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information.</p>
         <h3>1. Information We Collect</h3>
@@ -161,22 +163,22 @@
         <p>If you have any questions, please contact us at cookies@autopartshub.com.</p>
     </section>
 </div>
+
+
 <footer>
-    &copy; 2025 AutoParts Hub. All rights reserved. |
-    <a onclick="showSection('privacy')">Privacy Policy</a> |
-    <a onclick="showSection('terms')">Terms of Service</a> |
-    <a onclick="showSection('cookies')">Cookies Policy</a>
+  &copy; 2025 AutoParts Hub |
+  <a onclick="showSection('privacy')">Privacy Policy</a> |
+  <a onclick="showSection('terms')">Terms</a> |
+  <a onclick="showSection('cookies')">Cookies</a>
 </footer>
 
 <script>
-    function showSection(sectionId) {
-        document.getElementById('main').classList.add('hidden');
-        document.getElementById('privacy').classList.add('hidden');
-        document.getElementById('terms').classList.add('hidden');
-        document.getElementById('cookies').classList.add('hidden');
-        document.getElementById(sectionId).classList.remove('hidden');
-        window.scrollTo(0, 0);
-    }
+  function showSection(sectionId) {
+    const sections = ['main', 'shop', 'about', 'blog', 'privacy', 'terms', 'cookies'];
+    sections.forEach(id => document.getElementById(id)?.classList.add('hidden'));
+    document.getElementById(sectionId)?.classList.remove('hidden');
+    window.scrollTo(0, 0);
+  }
 </script>
 </body>
 </html>
