@@ -43,20 +43,54 @@
             background-color: #555;
         }
 
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x400?text=Auto+Parts+Hero');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            padding: 10px 25px;
+            font-size: 1em;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #e65c00;
+        }
+
         .container {
             max-width: 1200px;
             margin: 30px auto;
             padding: 0 20px;
         }
 
-        .intro {
-            text-align: center;
-            margin-bottom: 40px;
+        .section {
+            margin-bottom: 50px;
         }
 
-        .intro h2 {
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
             font-size: 2em;
-            margin-bottom: 10px;
+            color: #333;
         }
 
         .grid {
@@ -98,6 +132,53 @@
             color: #666;
         }
 
+        .about, .testimonials, .contact {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .testimonial {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonial h4 {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -118,70 +199,107 @@
         <a href="#">Contact</a>
     </nav>
 
-    <div class="container">
-        <div class="intro">
-            <h2>Top Quality Auto Parts</h2>
-            <p>Your one-stop shop for all car parts and accessories</p>
-        </div>
+    <section class="hero">
+        <h2>Upgrade Your Ride</h2>
+        <p>Top-quality auto parts for every vehicle. Shop now for the best deals!</p>
+        <button>Shop Now</button>
+    </section>
 
-        <div class="grid">
-            <div class="card">
-                <img src="https://via.placeholder.com/400x200?text=Engine" alt="Engine">
-                <div class="card-content">
-                    <h3>Engine</h3>
-                    <p>High-performance engines for all car models.</p>
+    <div class="container">
+        <section class="section">
+            <h2>Our Products</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=Engine" alt="Engine">
+                    <div class="card-content">
+                        <h3>Engine</h3>
+                        <p>High-performance engines for all car models.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=Brakes" alt="Brakes">
+                    <div class="card-content">
+                        <h3>Brakes</h3>
+                        <p>Reliable brake systems for safety and control.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=Suspension" alt="Suspension">
+                    <div class="card-content">
+                        <h3>Suspension</h3>
+                        <p>Smooth and comfortable rides with top-notch suspension.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=Battery" alt="Battery">
+                    <div class="card-content">
+                        <h3>Battery</h3>
+                        <p>Long-lasting car batteries for all weather conditions.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=Lights" alt="Lights">
+                    <div class="card-content">
+                        <h3>Lights</h3>
+                        <p>LED and halogen lights for better visibility.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=Exhaust" alt="Exhaust">
+                    <div class="card-content">
+                        <h3>Exhaust</h3>
+                        <p>Performance exhaust systems for a powerful drive.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=Filters" alt="Filters">
+                    <div class="card-content">
+                        <h3>Filters</h3>
+                        <p>Keep your engine clean with premium filters.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=Tires" alt="Tires">
+                    <div class="card-content">
+                        <h3>Tires</h3>
+                        <p>Durable tires for all terrains and seasons.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/400x200?text=Brakes" alt="Brakes">
-                <div class="card-content">
-                    <h3>Brakes</h3>
-                    <p>Reliable brake systems for safety and control.</p>
+        </section>
+
+        <section class="section about">
+            <h2>About Us</h2>
+            <p>At AutoParts Hub, we are passionate about keeping your vehicle running smoothly. With over 20 years of experience, we offer top-quality parts, expert advice, and unmatched customer service. Whether you’re a car enthusiast or a professional mechanic, we’re here to help you find exactly what you need.</p>
+        </section>
+
+        <section class="section testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="grid">
+                <div class="testimonial">
+                    <p>"Excellent quality and fast shipping! My car has never run better."</p>
+                    <h4>– Sarah T.</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Great customer service and very knowledgeable staff. Highly recommend!"</p>
+                    <h4>– Mike R.</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"I found all the parts I needed at great prices. Will shop again!"</p>
+                    <h4>– Amanda K.</h4>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/400x200?text=Suspension" alt="Suspension">
-                <div class="card-content">
-                    <h3>Suspension</h3>
-                    <p>Smooth and comfortable rides with top-notch suspension.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/400x200?text=Battery" alt="Battery">
-                <div class="card-content">
-                    <h3>Battery</h3>
-                    <p>Long-lasting car batteries for all weather conditions.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/400x200?text=Lights" alt="Lights">
-                <div class="card-content">
-                    <h3>Lights</h3>
-                    <p>LED and halogen lights for better visibility.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/400x200?text=Exhaust" alt="Exhaust">
-                <div class="card-content">
-                    <h3>Exhaust</h3>
-                    <p>Performance exhaust systems for a powerful drive.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/400x200?text=Filters" alt="Filters">
-                <div class="card-content">
-                    <h3>Filters</h3>
-                    <p>Keep your engine clean with premium filters.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/400x200?text=Tires" alt="Tires">
-                <div class="card-content">
-                    <h3>Tires</h3>
-                    <p>Durable tires for all terrains and seasons.</p>
-                </div>
-            </div>
-        </div>
+        </section>
+
+        <section class="section contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </div>
 
     <footer>
