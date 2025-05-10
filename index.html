@@ -13,11 +13,12 @@
         }
 
         body {
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #333;
+            background-color: #212529;
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -28,7 +29,7 @@
         }
 
         nav {
-            background-color: #444;
+            background-color: #343a40;
             text-align: center;
         }
 
@@ -37,14 +38,15 @@
             padding: 14px 20px;
             display: inline-block;
             text-decoration: none;
+            transition: background 0.3s;
         }
 
         nav a:hover {
-            background-color: #555;
+            background-color: #495057;
         }
 
         .hero {
-            background-image: url('https://via.placeholder.com/1200x400?text=Auto+Parts+Hero');
+            background-image: url('https://images.unsplash.com/photo-1603398938378-02b5d6a79e0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
             background-size: cover;
             background-position: center;
             color: white;
@@ -55,6 +57,7 @@
         .hero h2 {
             font-size: 3em;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
         }
 
         .hero p {
@@ -63,7 +66,7 @@
         }
 
         .hero button {
-            padding: 10px 25px;
+            padding: 12px 30px;
             font-size: 1em;
             background-color: #ff6600;
             color: white;
@@ -78,17 +81,17 @@
 
         .container {
             max-width: 1200px;
-            margin: 30px auto;
+            margin: 40px auto;
             padding: 0 20px;
         }
 
         .section {
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
 
         .section h2 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             font-size: 2em;
             color: #333;
         }
@@ -108,7 +111,7 @@
         }
 
         .card:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
 
         .card img {
@@ -129,7 +132,7 @@
 
         .card-content p {
             font-size: 0.9em;
-            color: #666;
+            color: #555;
         }
 
         .about, .testimonials, .contact {
@@ -141,7 +144,7 @@
 
         .testimonial {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
         }
 
         .testimonial p {
@@ -164,23 +167,25 @@
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            font-size: 1em;
         }
 
         form button {
-            padding: 10px;
-            background-color: #333;
+            padding: 12px;
+            background-color: #212529;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 1em;
         }
 
         form button:hover {
-            background-color: #555;
+            background-color: #343a40;
         }
 
         footer {
-            background-color: #333;
+            background-color: #212529;
             color: white;
             text-align: center;
             padding: 20px 0;
@@ -200,93 +205,93 @@
     </nav>
 
     <section class="hero">
-        <h2>Upgrade Your Ride</h2>
-        <p>Top-quality auto parts for every vehicle. Shop now for the best deals!</p>
+        <h2>Drive with Confidence</h2>
+        <p>Premium auto parts for performance, safety, and style — all in one place.</p>
         <button>Shop Now</button>
     </section>
 
     <div class="container">
         <section class="section">
-            <h2>Our Products</h2>
+            <h2>Our Featured Products</h2>
             <div class="grid">
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200?text=Engine" alt="Engine">
+                    <img src="https://images.unsplash.com/photo-1580674284512-7a1a2f8d03b5?auto=format&fit=crop&w=400&q=80" alt="Engine">
                     <div class="card-content">
-                        <h3>Engine</h3>
-                        <p>High-performance engines for all car models.</p>
+                        <h3>V8 Performance Engine</h3>
+                        <p>Upgrade to a high-output V8 engine for unmatched power and reliability.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200?text=Brakes" alt="Brakes">
+                    <img src="https://images.unsplash.com/photo-1608479442742-20cfc6e3d27e?auto=format&fit=crop&w=400&q=80" alt="Brakes">
                     <div class="card-content">
-                        <h3>Brakes</h3>
-                        <p>Reliable brake systems for safety and control.</p>
+                        <h3>Ceramic Brake Pads</h3>
+                        <p>Precision-engineered for superior stopping power and durability.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200?text=Suspension" alt="Suspension">
+                    <img src="https://images.unsplash.com/photo-1580080183876-cd7ed1340d0d?auto=format&fit=crop&w=400&q=80" alt="Suspension">
                     <div class="card-content">
-                        <h3>Suspension</h3>
-                        <p>Smooth and comfortable rides with top-notch suspension.</p>
+                        <h3>Adjustable Coilovers</h3>
+                        <p>Improve handling and ride quality with fully adjustable coilover kits.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200?text=Battery" alt="Battery">
+                    <img src="https://images.unsplash.com/photo-1634121534976-2f11a309d775?auto=format&fit=crop&w=400&q=80" alt="Battery">
                     <div class="card-content">
-                        <h3>Battery</h3>
-                        <p>Long-lasting car batteries for all weather conditions.</p>
+                        <h3>High-Performance Battery</h3>
+                        <p>Long-lasting, maintenance-free batteries for all vehicle types.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200?text=Lights" alt="Lights">
+                    <img src="https://images.unsplash.com/photo-1611346478302-92450b65c1e1?auto=format&fit=crop&w=400&q=80" alt="Lights">
                     <div class="card-content">
-                        <h3>Lights</h3>
-                        <p>LED and halogen lights for better visibility.</p>
+                        <h3>LED Headlight Kit</h3>
+                        <p>Brilliant LED lights for enhanced night visibility and safety.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200?text=Exhaust" alt="Exhaust">
+                    <img src="https://images.unsplash.com/photo-1608478417033-4eea6e609b58?auto=format&fit=crop&w=400&q=80" alt="Exhaust">
                     <div class="card-content">
-                        <h3>Exhaust</h3>
-                        <p>Performance exhaust systems for a powerful drive.</p>
+                        <h3>Sport Exhaust System</h3>
+                        <p>Add a deep, aggressive tone and boost horsepower with our exhaust kits.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200?text=Filters" alt="Filters">
+                    <img src="https://images.unsplash.com/photo-1628277619307-1cfc36a3a46c?auto=format&fit=crop&w=400&q=80" alt="Filters">
                     <div class="card-content">
-                        <h3>Filters</h3>
-                        <p>Keep your engine clean with premium filters.</p>
+                        <h3>Performance Air Filter</h3>
+                        <p>Increase airflow and improve engine performance with washable filters.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200?text=Tires" alt="Tires">
+                    <img src="https://images.unsplash.com/photo-1632333883925-61fc7c278e17?auto=format&fit=crop&w=400&q=80" alt="Tires">
                     <div class="card-content">
-                        <h3>Tires</h3>
-                        <p>Durable tires for all terrains and seasons.</p>
+                        <h3>All-Season Tires</h3>
+                        <p>Premium grip and handling for any weather condition or road surface.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="section about">
-            <h2>About Us</h2>
-            <p>At AutoParts Hub, we are passionate about keeping your vehicle running smoothly. With over 20 years of experience, we offer top-quality parts, expert advice, and unmatched customer service. Whether you’re a car enthusiast or a professional mechanic, we’re here to help you find exactly what you need.</p>
+            <h2>About AutoParts Hub</h2>
+            <p>For over 20 years, AutoParts Hub has been dedicated to providing top-tier auto parts to enthusiasts, professionals, and everyday drivers. Our mission is simple: deliver high-quality products at competitive prices, backed by expert advice and outstanding customer service. Whether you're upgrading your vehicle's performance or replacing worn components, we have everything you need to drive with confidence.</p>
         </section>
 
         <section class="section testimonials">
-            <h2>What Our Customers Say</h2>
+            <h2>Customer Reviews</h2>
             <div class="grid">
                 <div class="testimonial">
-                    <p>"Excellent quality and fast shipping! My car has never run better."</p>
-                    <h4>– Sarah T.</h4>
+                    <p>"I replaced my brakes with AutoParts Hub's ceramic pads — the difference is night and day. Excellent quality!"</p>
+                    <h4>– Sarah Thompson</h4>
                 </div>
                 <div class="testimonial">
-                    <p>"Great customer service and very knowledgeable staff. Highly recommend!"</p>
-                    <h4>– Mike R.</h4>
+                    <p>"Super fast delivery and the battery I ordered works perfectly. I’m impressed with the service!"</p>
+                    <h4>– Michael Rodriguez</h4>
                 </div>
                 <div class="testimonial">
-                    <p>"I found all the parts I needed at great prices. Will shop again!"</p>
-                    <h4>– Amanda K.</h4>
+                    <p>"Great selection of performance parts. I upgraded my exhaust system and couldn’t be happier."</p>
+                    <h4>– Amanda Lee</h4>
                 </div>
             </div>
         </section>
