@@ -87,6 +87,17 @@
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
         footer {
             background-color: #212529;
             color: white;
@@ -125,10 +136,32 @@
 <div class="container">
     <div id="main">
         <section class="section about">
+            <h2>Top Auto Parts</h2>
+            <div class="image-gallery">
+                <img src="https://source.unsplash.com/featured/?car-wheel" alt="Car Wheel">
+                <img src="https://source.unsplash.com/featured/?car-engine" alt="Car Engine">
+                <img src="https://source.unsplash.com/featured/?brake-system" alt="Brake System">
+                <img src="https://source.unsplash.com/featured/?car-battery" alt="Car Battery">
+                <img src="https://source.unsplash.com/featured/?car-exhaust" alt="Car Exhaust">
+                <img src="https://source.unsplash.com/featured/?shock-absorber" alt="Shock Absorber">
+                <img src="https://source.unsplash.com/featured/?auto-parts" alt="Auto Parts">
+            </div>
             <h2>About AutoParts Hub</h2>
-            <p>For over 20 years, AutoParts Hub has delivered premium parts to car enthusiasts and professional mechanics alike. From brake systems to engine components, we ensure quality, performance, and safety.</p>
+            <p>For over 20 years, AutoParts Hub has delivered premium parts to car enthusiasts and professional mechanics alike. Our mission is to ensure every driver has access to reliable, high-quality components that boost performance and ensure safety on the road.</p>
+            <p>We stock a wide range of parts: brakes, batteries, filters, suspension kits, exhaust systems, and more. Our expert team handpicks every product to meet the highest standards. Plus, with fast shipping and excellent customer support, we’re your trusted partner in automotive care.</p>
         </section>
-        <!-- Add more sections as needed -->
+
+        <section class="section">
+            <h2>Explore More Products</h2>
+            <div class="image-gallery">
+                <img src="https://source.unsplash.com/featured/?spark-plug" alt="Spark Plug">
+                <img src="https://source.unsplash.com/featured/?oil-filter" alt="Oil Filter">
+                <img src="https://source.unsplash.com/featured/?air-filter" alt="Air Filter">
+                <img src="https://source.unsplash.com/featured/?car-radiator" alt="Radiator">
+                <img src="https://source.unsplash.com/featured/?fuel-pump" alt="Fuel Pump">
+                <img src="https://source.unsplash.com/featured/?headlights" alt="Headlights">
+            </div>
+        </section>
     </div>
 
     <section id="privacy" class="section privacy hidden">
@@ -186,7 +219,6 @@
         <p>If you have any questions, please contact us at cookies@autopartshub.com.</p>
     </section>
 </div>
-
 <footer>
     &copy; 2025 AutoParts Hub. All rights reserved. |
     <a onclick="showSection('privacy')">Privacy Policy</a> |
