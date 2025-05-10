@@ -11,28 +11,23 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
-
         body {
             background-color: #f8f9fa;
             line-height: 1.6;
         }
-
         header {
             background-color: #212529;
             color: #fff;
             padding: 20px 0;
             text-align: center;
         }
-
         header h1 {
             font-size: 2.5em;
         }
-
         nav {
             background-color: #343a40;
             text-align: center;
         }
-
         nav a {
             color: white;
             padding: 14px 20px;
@@ -40,11 +35,9 @@
             text-decoration: none;
             transition: background 0.3s;
         }
-
         nav a:hover {
             background-color: #495057;
         }
-
         .hero {
             background-image: url('https://images.unsplash.com/photo-1603398938378-02b5d6a79e0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
             background-size: cover;
@@ -53,18 +46,15 @@
             text-align: center;
             padding: 100px 20px;
         }
-
         .hero h2 {
             font-size: 3em;
             margin-bottom: 20px;
             text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
         }
-
         .hero p {
             font-size: 1.2em;
             margin-bottom: 30px;
         }
-
         .hero button {
             padding: 12px 30px;
             font-size: 1em;
@@ -74,120 +64,41 @@
             border-radius: 5px;
             cursor: pointer;
         }
-
         .hero button:hover {
             background-color: #e65c00;
         }
-
         .container {
             max-width: 1200px;
             margin: 40px auto;
             padding: 0 20px;
         }
-
         .section {
             margin-bottom: 60px;
         }
-
         .section h2 {
             text-align: center;
             margin-bottom: 30px;
             font-size: 2em;
             color: #333;
         }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background-color: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-
-        .card:hover {
-            transform: scale(1.03);
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card-content {
-            padding: 15px;
-        }
-
-        .card-content h3 {
-            margin-bottom: 10px;
-            font-size: 1.2em;
-            color: #333;
-        }
-
-        .card-content p {
-            font-size: 0.9em;
-            color: #555;
-        }
-
-        .about, .testimonials, .contact, .faq, .blog, .privacy {
+        .about, .privacy, .terms {
             background-color: white;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-
-        .testimonial, .faq-item, .blog-post {
-            text-align: center;
-            padding: 15px;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        form input, form textarea {
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1em;
-        }
-
-        form button {
-            padding: 12px;
-            background-color: #212529;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-        }
-
-        form button:hover {
-            background-color: #343a40;
-        }
-
         footer {
             background-color: #212529;
             color: white;
             text-align: center;
             padding: 20px 0;
         }
-
         footer a {
             color: #ff6600;
             text-decoration: none;
             margin: 0 10px;
             cursor: pointer;
         }
-
         .hidden {
             display: none;
         }
@@ -213,13 +124,11 @@
 
 <div class="container">
     <div id="main">
-        <!-- Keep your entire main content here -->
-        <!-- (I kept this short here — use the full content from the previous version) -->
         <section class="section about">
             <h2>About AutoParts Hub</h2>
-            <p>For over 20 years, AutoParts Hub has delivered premium parts to car enthusiasts and professional mechanics alike...</p>
+            <p>For over 20 years, AutoParts Hub has delivered premium parts to car enthusiasts and professional mechanics alike. From brake systems to engine components, we ensure quality, performance, and safety.</p>
         </section>
-        <!-- Add more sections from previous code here... -->
+        <!-- Add more sections as needed -->
     </div>
 
     <section id="privacy" class="section privacy hidden">
@@ -240,25 +149,41 @@
         <h3>7. Contact Us</h3>
         <p>If you have any questions, please contact us at privacy@autopartshub.com.</p>
     </section>
+
+    <section id="terms" class="section terms hidden">
+        <h2>Terms of Service</h2>
+        <p>Welcome to AutoParts Hub. By using our website, you agree to the following terms and conditions.</p>
+        <h3>1. Use of Website</h3>
+        <p>You agree to use this site for lawful purposes only and not to engage in any activity that disrupts or interferes with its operation.</p>
+        <h3>2. Product Information</h3>
+        <p>We make every effort to display accurate product descriptions and pricing. We reserve the right to correct errors and update information at any time.</p>
+        <h3>3. Orders and Payments</h3>
+        <p>All orders are subject to availability and confirmation. Payment must be received before we ship products.</p>
+        <h3>4. Shipping and Returns</h3>
+        <p>Please refer to our Shipping and Returns policy for details on delivery times, costs, and return procedures.</p>
+        <h3>5. Limitation of Liability</h3>
+        <p>AutoParts Hub is not liable for indirect, incidental, or consequential damages arising from the use of our products or website.</p>
+        <h3>6. Changes to Terms</h3>
+        <p>We reserve the right to modify these Terms of Service at any time. Continued use of the website indicates your acceptance of the changes.</p>
+        <h3>7. Contact Us</h3>
+        <p>If you have questions, please contact us at support@autopartshub.com.</p>
+    </section>
 </div>
 
 <footer>
     &copy; 2025 AutoParts Hub. All rights reserved. |
     <a onclick="showSection('privacy')">Privacy Policy</a> |
-    <a href="#">Terms of Service</a>
+    <a onclick="showSection('terms')">Terms of Service</a>
 </footer>
 
 <script>
     function showSection(sectionId) {
         document.getElementById('main').classList.add('hidden');
         document.getElementById('privacy').classList.add('hidden');
+        document.getElementById('terms').classList.add('hidden');
 
-        if (sectionId === 'main') {
-            document.getElementById('main').classList.remove('hidden');
-        } else if (sectionId === 'privacy') {
-            document.getElementById('privacy').classList.remove('hidden');
-            window.scrollTo(0, 0);
-        }
+        document.getElementById(sectionId).classList.remove('hidden');
+        window.scrollTo(0, 0);
     }
 </script>
 </body>
